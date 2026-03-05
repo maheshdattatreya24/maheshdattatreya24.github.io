@@ -35,6 +35,12 @@ z-index:1000;
 box-sizing:border-box;
 }
 
+.update-message{
+max-width:90%;
+margin:auto;
+}
+
+
 .logo{
 font-weight:600;
 font-size:20px;
