@@ -1,20 +1,21 @@
+document.querySelectorAll(".nav-links a").forEach(anchor => {
 
-const links=document.querySelectorAll("nav a");
+anchor.addEventListener("click", function(e){
 
-links.forEach(link=>{
+const targetId=this.getAttribute("href");
 
-link.addEventListener("click",function(e){
+if(targetId.startsWith("#")){
 
 e.preventDefault();
 
-const target=document.querySelector(this.getAttribute("href"));
+const target=document.querySelector(targetId);
 
 window.scrollTo({
-
-top:target.offsetTop-60,
+top:target.offsetTop-80,
 behavior:"smooth"
-
 });
+
+}
 
 });
 
