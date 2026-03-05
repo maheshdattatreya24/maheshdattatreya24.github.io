@@ -155,22 +155,6 @@ border-radius:6px;
 margin-bottom:20px;
 }
 
-.progress-bar{
-height:10px;
-background:#38bdf8;
-border-radius:6px;
-}
-.home-image img{
-width:180px;
-height:180px;
-}
 
-.section{
-padding:100px 25px;
-}
-
-.project-grid{
-grid-template-columns:1fr;
-}
 
 }
