@@ -40,3 +40,36 @@ speed: 2
 }
 }
 });
+async function loadProjects(){
+
+const username="maheshdattatreya24"
+
+const response=await fetch(`https://api.github.com/users/${username}/repos`);
+
+const repos=await response.json();
+
+const container=document.getElementById("github-projects");
+
+repos.slice(0,6).forEach(repo=>{
+
+const card=document.createElement("div");
+
+card.className="project-card";
+
+card.innerHTML=`
+
+<h3>${repo.name}</h3>
+
+<p>${repo.description || "AI project repository"}</p>
+
+<a href="${repo.html_url}" target="_blank">View Project</a>
+
+`;
+
+container.appendChild(card);
+
+});
+
+}
+
+loadProjects();
