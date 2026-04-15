@@ -259,6 +259,39 @@ transform:translateY(-8px);
 background:#334155;
 }
 
+
+
+/* BADGES */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.research { background: #ff4d6d; color: white; }
+.production { background: #00c896; color: white; }
+.ml { background: #3a86ff; color: white; }
+.dl { background: #8338ec; color: white; }
+.nlp { background: #ffbe0b; color: black; }
+.cv { background: #fb5607; color: white; }
+
+/* HOVER EFFECT */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* TOP PROJECT HIGHLIGHT */
+.highlight-card {
+  border: 2px solid #ff4d6d;
+}
 /* BUTTON */
 
 .btn{
